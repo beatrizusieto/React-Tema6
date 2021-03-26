@@ -2,6 +2,7 @@ import './App.css';
 import Book from './book'; 
 import data from './llibres.json';
 
+/* Ejercicio terminado */
 function App() {
 
   const listLlibres = data.map(llibre =>
