@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Book from './book'; 
+import data from './llibres.json';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  const listLlibres = data.map(llibre =>
+         <div>
+          <Book titol={llibre.title} autor={llibre.author} />
+         </div>
   );
-}
+  
+    return(
+        <div className="App">
+            { listLlibres }
+        </div>
+      )
+  }
 
 export default App;
