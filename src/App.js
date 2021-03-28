@@ -1,6 +1,6 @@
 import './App.css';
 import Book from './components/book'; 
-import data from './llibres.json';
+import data from './sample/llibres.json';
 
 /* Ejercicio terminado */
 function App() {
