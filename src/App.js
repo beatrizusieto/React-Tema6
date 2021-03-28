@@ -5,8 +5,8 @@ import data from './llibres.json';
 /* Ejercicio terminado */
 function App() {
 
-  const listLlibres = data.map(llibre =>
-         <div>
+  const listLlibres = data.map(llibre => 
+         <div key={llibre.id}>
           <Book titol={llibre.title} autor={llibre.author} />
          </div>
   );
