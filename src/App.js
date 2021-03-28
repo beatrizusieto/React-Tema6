@@ -1,11 +1,12 @@
 import './App.css';
-import Book from './book'; 
-import data from './llibres.json';
+import Book from './components/book'; 
+import data from './sample/llibres.json';
 
+/* Ejercicio terminado */
 function App() {
 
-  const listLlibres = data.map(llibre =>
-         <div>
+  const listLlibres = data.map(llibre => 
+         <div key={llibre.id}>
           <Book titol={llibre.title} autor={llibre.author} />
          </div>
   );
