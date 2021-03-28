@@ -1,5 +1,5 @@
 import './App.css';
-import Book from './book'; 
+import Book from './components/book'; 
 import data from './llibres.json';
 
 /* Ejercicio terminado */
